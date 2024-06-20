@@ -67,6 +67,23 @@ Mistral-7b finetuning's performance was not as good.
 
 <br><br>
 
+## User Interface
+
+The GUI consists of the following components:
+
+- **Model Selection**: A dropdown menu to select from the available models (e.g., `flan_t5_shrump`, `gpt2_shrump`).
+- **Load Model Button**: A button to load the selected model.
+- **Prompt Entry**: An input field where the user can enter a text prompt.
+- **Generate Text Button**: A button to generate text based on the entered prompt.
+- **Output Text Area**: A scrollable text area to display the generated text.
+
+### Interface Explanation
+
+- **Model Selection**: Use the dropdown menu to select the desired model. The default options are `flan_t5_shrump` and `gpt2_shrump`.
+- **Load Model Button**: After selecting the model, click the "Charger le modèle" (Load Model) button to load the model. The application will display a message indicating the successful loading of the model.
+- **Prompt Entry**: Enter your text prompt in the provided input field. Note that the prompt entry field is hidden when the `gpt2_shrump` model is selected because it doesn't require an initial prompt.
+- **Generate Text Button**: Click the "Générer du texte" (Generate Text) button to generate text based on the entered prompt. The output will be displayed in the scrollable text area.
+
 ## Content
 
 - `Dataset`: code and data used to create the final datasets
@@ -78,3 +95,8 @@ Mistral-7b finetuning's performance was not as good.
 - `Finetuning_notebooks`: notebooks used to finetune the three models
 
 - `performance_evaluation`: code used to finetune the BERT classifier and code used to evaluate the performance of the models through the classifier
+  
+- `Interface` : code for running up the interactive interface for text generation
+
+
+
