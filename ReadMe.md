@@ -65,6 +65,11 @@ Mistral-7b finetuning's performance was not as good.
 
 "Other" is labeled as the author of more than half the texts. Paradoxically, the scores of the finetuned model are even worse than the basic model.
 
+Similarly, the same problems presented by the finetuning of Mistral's model arise when evaluating FLAN
+
+<p align="center">
+<img src="./images/flan_eval.png" alt="gpt metrics" width="500"/>
+</p>
 <br><br>
 
 ## User Interface
