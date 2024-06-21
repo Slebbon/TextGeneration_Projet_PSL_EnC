@@ -86,6 +86,13 @@ The model must be imported in the relative folder, and then changed manually on 
 - **Prompt Entry**: Enter your text prompt in the provided input field. Note that the prompt entry field is hidden when the `gpt2_shrump` model is selected because it doesn't require an initial prompt.
 - **Generate Text Button**: Click the "Générer du texte" (Generate Text) button to generate text based on the entered prompt. The output will be displayed in the scrollable text area.
 
+<p align="center">
+<img src="./images/Ex1_Interface.png" alt="Example with Flan" width="500"/>
+</p>
+
+<p align="center">
+<img src="./images/Ex2_Interface.png" alt="Example with GPT2" width="500"/>
+</p>
 ## Content
 
 - `Dataset`: code and data used to create the final datasets
