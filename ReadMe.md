@@ -93,6 +93,7 @@ The model must be imported in the relative folder, and then changed manually on 
 <p align="center">
 <img src="./images/Ex2_Interface.png" alt="Example with GPT2" width="500"/>
 </p>
+
 ## Content
 
 - `Dataset`: code and data used to create the final datasets
