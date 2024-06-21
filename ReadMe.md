@@ -123,3 +123,12 @@ The model must be imported in the relative folder, and then changed manually on 
 - `embedding creation` : Code which, given a dataset, extracts its embeddings from the text and adds them to the dataframe.
 
 
+## Limits
+
+There are several limitations to the present work. One, of course, is the inconsistency of training of different models. A more rigorous work should use the same hyperparameters and the same data for all the trainings, or at least develop methods for identifying the most suitable training arguments.
+
+The second concerns the cleaning of training data. As can be seen from the interface examples with GPT-2, the finetuned model tends to respond with nonexistent links. This ends up making the responses less understandable. In performance evaluation, it also most likely leads to many responses being categorized as "Trump" by the BERT classifier. A better job of cleaning the data before training should remove links.
+
+The third major limitation concerns the method of performance evaluation. In fact, the method used measures the effectiveness of finetuning crudely. It looks only at the style of responses and not at the meaning of the responses with respect to the prompt. This therefore does not penalize cases of "catastrophic forgetting": that is, the case where finetuning ends up nullifying the model's ability to understand what it is being asked.
+
+Finally, one last note on the evaluation method. The BERT classifier affixes only one label to each text: Trump, Shakespeare, Other. As a result, it does not allow the extent to which each generated text can contain elements from both authors simultaneously to be measured. Such work could have been done by processing the distances between embeddings of the model-generated texts and reference texts, but due to computational limitations it could not be done in the present work.
