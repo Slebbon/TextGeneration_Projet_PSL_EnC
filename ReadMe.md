@@ -79,6 +79,8 @@ The GUI consists of the following components:
 
 ### Interface Explanation
 
+The model must be imported in the relative folder, and then changed manually on the code.
+
 - **Model Selection**: Use the dropdown menu to select the desired model. The default options are `flan_t5_shrump` and `gpt2_shrump`.
 - **Load Model Button**: After selecting the model, click the "Charger le modèle" (Load Model) button to load the model. The application will display a message indicating the successful loading of the model.
 - **Prompt Entry**: Enter your text prompt in the provided input field. Note that the prompt entry field is hidden when the `gpt2_shrump` model is selected because it doesn't require an initial prompt.
