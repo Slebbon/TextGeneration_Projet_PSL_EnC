@@ -1,10 +1,12 @@
 # Shrump 
-Finetuning of different large language models on a mixed dataset of Shakespeare quotes and Trump tweets
+Finetuning of different large language models on a mixed dataset of Shakespeare quotes and Trump tweets.
 
 <br>
 
 ## The project
 The goal of the project is to finetune some language models to make them generate text in a mixed style of Trump and Shakespeare. We did this on three different models: GPT-2, FLAN-T5 and Mistral-7b. Next, we measured the performance of the different models through a BERT text classifier applied to the generated texts. 
+
+All finetuned models are available on this [drive](https://drive.google.com/drive/u/0/folders/1Iy4SyregQdYFziZT4dl1poL-FKYSMWOD). 
 
 <br>
 
@@ -132,3 +134,8 @@ The second concerns the cleaning of training data. As can be seen from the inter
 The third major limitation concerns the method of performance evaluation. In fact, the method used measures the effectiveness of finetuning crudely. It looks only at the style of responses and not at the meaning of the responses with respect to the prompt. This therefore does not penalize cases of "catastrophic forgetting": that is, the case where finetuning ends up nullifying the model's ability to understand what it is being asked.
 
 Finally, one last note on the evaluation method. The BERT classifier affixes only one label to each text: Trump, Shakespeare, Other. As a result, it does not allow the extent to which each generated text can contain elements from both authors simultaneously to be measured. Such work could have been done by processing the distances between embeddings of the model-generated texts and reference texts, but due to computational limitations it could not be done in the present work.
+
+-------
+<br>
+
+<i>Project developed in the context of 1st year of Digital Humanities Master at École des Chartes, PSL.</i>
